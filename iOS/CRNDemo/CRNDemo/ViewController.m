@@ -147,10 +147,18 @@
     }
     [self.itemList addObjectsFromArray:[dfts valueForKey:kItemListKey]];
     
-    NSString *testUrlStr = @"http://localhost:8081/index.bundle?CRNModuleName=CRNDemo&CRNType=1&platform=ios";//
-    if (![self.itemList containsObject:testUrlStr]) {
-        [self.itemList addObject:testUrlStr];
+//    NSString *testUrlStr = @"http://localhost:8081/index.bundle?CRNModuleName=CRNDemo&CRNType=1&platform=ios";
+
+    NSString *rnDebugURLPath = @"/tmp/.__RN_Debug_URL.log";
+    NSString *testUrlStr = [NSString stringWithContentsOfFile:rnDebugURLPath
+                                         encoding:NSUTF8StringEncoding
+                                            error:NULL];
+    if (testUrlStr.length > 0) {
+        if (![self.itemList containsObject:testUrlStr]) {
+            [self.itemList addObject:testUrlStr];
+        }
     }
+    
     
     if ([self.itemList count] == 0) {
         self.tableView.hidden = YES;
