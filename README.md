@@ -16,8 +16,8 @@ CRN是Ctrip React Native简称，由携程无线平台研发团队基于React Na
 开源代码中的iOS/Android Demo工程可以运行起来，参考以下操作步骤。
 
 1. RN运行环境搭建，参考[官方文档](https://facebook.github.io/react-native/docs/getting-started)
-2. 进入iOS目录，使用`xcode`打开`./ios/CRNDemo.xcodeproj`工程，运行
-3. 进入Android目录，使用`Android Studio`导入`./android`工程，Run
+2. 进入iOS目录，使用`xcode`打开`./iOS/CRNDemo/CRNDemo.xcodeproj`工程，运行
+3. 进入Android目录，使用`Android Studio`导入`./Android`工程，Run
    
 <img src="resources/crndemo.gif" width="50%"/>
 
