@@ -2,7 +2,7 @@
 
 1.将CRNDemo中 crnbase， rnSource目录拷贝至待接入工程顶级目录
 
-<img src="resources/android_copy.jpg" width="30%"/>
+<img src="../resources/android_copy.jpg" width="30%"/>
 
 2.配置相关module
 
@@ -26,7 +26,7 @@ dependencies {
 
 3.将用CRN-CLI打包的产物添加到assets/webapp目录
 
-<img src="resources/android_webapp.jpg" width="30%"/>
+<img src="../resources/android_webapp.jpg" width="30%"/>
 
 4.启动逻辑中添加代码处理代码并预加载框架代码，可参考CRNDemo中的启动逻辑:
 
