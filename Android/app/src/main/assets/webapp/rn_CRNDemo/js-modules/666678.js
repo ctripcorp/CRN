@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets",width:180,height:180,scales:[1],hash:"a4229a02956f081f4eabe79bdf9e66c4",name:"icon",type:"png"})},666678,[165]);

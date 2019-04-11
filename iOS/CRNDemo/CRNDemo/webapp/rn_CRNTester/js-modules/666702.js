@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/Thumbnails",width:128,height:128,scales:[1],hash:"79cc718c9b403e6a2ea26fc3898a267d",name:"victory",type:"png"})},666702,[165]);

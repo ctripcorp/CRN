@@ -1,0 +1,15 @@
+apply plugin: 'maven'
+
+def reactAndroidVersion = "0.59.0-01-SNAPSHOT"
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://$rootDir/repo")
+            pom.artifactId = project.getName()
+            pom.version = reactAndroidVersion
+            pom.packaging = 'aar'
+            pom.groupId = "ctrip.wireless.android"
+        }
+    }
+}

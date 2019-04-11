@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets",width:128,height:128,scales:[1],hash:"cf5d66fee2f7d78b134226ddec809beb",name:"uie_thumb_big",type:"png"})},666731,[165]);

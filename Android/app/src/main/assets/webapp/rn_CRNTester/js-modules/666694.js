@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/Thumbnails",width:128,height:128,scales:[1],hash:"29ddafe2bdf9084dd16abce3d9fd2546",name:"fist",type:"png"})},666694,[165]);

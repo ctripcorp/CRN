@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets",width:240,height:240,scales:[1],hash:"8871d4f1f3b46e7a81c21184429a984f",name:"bunny",type:"png"})},666710,[165]);

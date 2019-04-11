@@ -1,0 +1,14 @@
+/xcuserdata
+*.xcuserdatad
+*/xcshareddata
+*.xcuserstate
+/xcshareddata
+.vscode
+.DS_Store 
+*DS_Store
+xcuserdata
+node_modules/
+packages/crn-cli/commands/init/template/ios
+packages/crn-cli/commands/init/template/android
+RNTester/js/node_modules
+RNTester/js/publish

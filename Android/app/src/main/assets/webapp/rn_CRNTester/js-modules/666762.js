@@ -1,0 +1,1 @@
+__d(function(e,t,s,a,r,i,p){r.exports=t(p[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/AnimatedGratuitousApp",width:509,height:339,scales:[1],hash:"1f3e88f7400ee58f62c7bc5d288996e4",name:"trees",type:"jpg"})},666762,[165]);

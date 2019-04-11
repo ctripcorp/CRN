@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ctrip.wireless.android</groupId>
+  <artifactId>ReactAndroid</artifactId>
+  <versioning>
+    <versions>
+      <version>0.59.0-01-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190411014339</lastUpdated>
+  </versioning>
+</metadata>

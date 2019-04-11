@@ -1,0 +1,1 @@
+__d(function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets",width:18,height:18,scales:[1,2],hash:"5ae382059ed033dc4820b9935e6b4174",name:"slider",type:"png"})},666732,[165]);

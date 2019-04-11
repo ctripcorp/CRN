@@ -1,0 +1,7 @@
+include ':app', ':crnbase'
+
+if (!settings.hasProperty("useReactAndroidSource") || Boolean.parseBoolean(useReactAndroidSource)) {
+    include ':ReactAndroid'
+    project(':ReactAndroid').projectDir = new File(rootProject.projectDir, './rnSource/ReactAndroid')
+}
+

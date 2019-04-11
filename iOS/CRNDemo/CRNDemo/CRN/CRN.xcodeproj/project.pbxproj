@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D5A61F225E09EB00A10DCC /* RCTBridge+CRN.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A606225E09EB00A10DCC /* RCTBridge+CRN.m */; };
+		44D5A620225E09EB00A10DCC /* CRNUnbundlePackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A607225E09EB00A10DCC /* CRNUnbundlePackage.m */; };
+		44D5A621225E09EB00A10DCC /* CRNURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A60A225E09EB00A10DCC /* CRNURL.m */; };
+		44D5A622225E09EB00A10DCC /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A60D225E09EB00A10DCC /* NSString+URL.m */; };
+		44D5A623225E09EB00A10DCC /* CRNDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A60F225E09EB00A10DCC /* CRNDefine.m */; };
+		44D5A624225E09EB00A10DCC /* CRNURLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A610225E09EB00A10DCC /* CRNURLHandler.m */; };
+		44D5A625225E09EB00A10DCC /* CRNUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A611225E09EB00A10DCC /* CRNUtils.m */; };
+		44D5A626225E09EB00A10DCC /* CRNPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A616225E09EB00A10DCC /* CRNPlugin.m */; };
+		44D5A627225E09EB00A10DCC /* CRNBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61A225E09EB00A10DCC /* CRNBridgeManager.m */; };
+		44D5A628225E09EB00A10DCC /* CRNView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61B225E09EB00A10DCC /* CRNView.m */; };
+		44D5A629225E09EB00A10DCC /* CRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61D225E09EB00A10DCC /* CRNViewController.m */; };
+		44D5A630225E0E1F00A10DCC /* CRNURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A608225E09EB00A10DCC /* CRNURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A631225E0E1F00A10DCC /* CRNURLHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A614225E09EB00A10DCC /* CRNURLHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A632225E0E1F00A10DCC /* CRNUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A60E225E09EB00A10DCC /* CRNUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A633225E0E1F00A10DCC /* CRNViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A619225E09EB00A10DCC /* CRNViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A634225E0E1F00A10DCC /* CRNBridgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A61C225E09EB00A10DCC /* CRNBridgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A635225E0E1F00A10DCC /* CRNView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A61E225E09EB00A10DCC /* CRNView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A636225E0EF200A10DCC /* CRNPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A617225E09EB00A10DCC /* CRNPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A637225E0EF200A10DCC /* CRNDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A613225E09EB00A10DCC /* CRNDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D5A64B225E11CE00A10DCC /* CTToastTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A649225E11CE00A10DCC /* CTToastTipView.h */; };
+		44D5A64C225E11CE00A10DCC /* CTToastTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A64A225E11CE00A10DCC /* CTToastTipView.m */; };
+		44D5A64F225E11EB00A10DCC /* CTFullScreenMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A64D225E11EB00A10DCC /* CTFullScreenMaskView.h */; };
+		44D5A650225E11EB00A10DCC /* CTFullScreenMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A64E225E11EB00A10DCC /* CTFullScreenMaskView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44D5A590225E072000A10DCC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44D5A592225E072000A10DCC /* libCRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCRN.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D5A606225E09EB00A10DCC /* RCTBridge+CRN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTBridge+CRN.m"; sourceTree = "<group>"; };
+		44D5A607225E09EB00A10DCC /* CRNUnbundlePackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNUnbundlePackage.m; sourceTree = "<group>"; };
+		44D5A608225E09EB00A10DCC /* CRNURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNURL.h; sourceTree = "<group>"; };
+		44D5A609225E09EB00A10DCC /* CRNUnbundlePackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNUnbundlePackage.h; sourceTree = "<group>"; };
+		44D5A60A225E09EB00A10DCC /* CRNURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNURL.m; sourceTree = "<group>"; };
+		44D5A60B225E09EB00A10DCC /* RCTBridge+CRN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTBridge+CRN.h"; sourceTree = "<group>"; };
+		44D5A60D225E09EB00A10DCC /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		44D5A60E225E09EB00A10DCC /* CRNUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNUtils.h; sourceTree = "<group>"; };
+		44D5A60F225E09EB00A10DCC /* CRNDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNDefine.m; sourceTree = "<group>"; };
+		44D5A610225E09EB00A10DCC /* CRNURLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNURLHandler.m; sourceTree = "<group>"; };
+		44D5A611225E09EB00A10DCC /* CRNUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNUtils.m; sourceTree = "<group>"; };
+		44D5A612225E09EB00A10DCC /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		44D5A613225E09EB00A10DCC /* CRNDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNDefine.h; sourceTree = "<group>"; };
+		44D5A614225E09EB00A10DCC /* CRNURLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNURLHandler.h; sourceTree = "<group>"; };
+		44D5A616225E09EB00A10DCC /* CRNPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNPlugin.m; sourceTree = "<group>"; };
+		44D5A617225E09EB00A10DCC /* CRNPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNPlugin.h; sourceTree = "<group>"; };
+		44D5A619225E09EB00A10DCC /* CRNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNViewController.h; sourceTree = "<group>"; };
+		44D5A61A225E09EB00A10DCC /* CRNBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNBridgeManager.m; sourceTree = "<group>"; };
+		44D5A61B225E09EB00A10DCC /* CRNView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNView.m; sourceTree = "<group>"; };
+		44D5A61C225E09EB00A10DCC /* CRNBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNBridgeManager.h; sourceTree = "<group>"; };
+		44D5A61D225E09EB00A10DCC /* CRNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNViewController.m; sourceTree = "<group>"; };
+		44D5A61E225E09EB00A10DCC /* CRNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNView.h; sourceTree = "<group>"; };
+		44D5A649225E11CE00A10DCC /* CTToastTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTToastTipView.h; sourceTree = "<group>"; };
+		44D5A64A225E11CE00A10DCC /* CTToastTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTToastTipView.m; sourceTree = "<group>"; };
+		44D5A64D225E11EB00A10DCC /* CTFullScreenMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFullScreenMaskView.h; sourceTree = "<group>"; };
+		44D5A64E225E11EB00A10DCC /* CTFullScreenMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFullScreenMaskView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D5A58F225E072000A10DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D5A589225E072000A10DCC = {
+			isa = PBXGroup;
+			children = (
+				44D5A594225E072000A10DCC /* CRN */,
+				44D5A593225E072000A10DCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44D5A593225E072000A10DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A592225E072000A10DCC /* libCRN.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D5A594225E072000A10DCC /* CRN */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A605225E09EB00A10DCC /* Model */,
+				44D5A615225E09EB00A10DCC /* Plugin */,
+				44D5A60C225E09EB00A10DCC /* Tool */,
+				44D5A618225E09EB00A10DCC /* View */,
+			);
+			path = CRN;
+			sourceTree = "<group>";
+		};
+		44D5A605225E09EB00A10DCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A609225E09EB00A10DCC /* CRNUnbundlePackage.h */,
+				44D5A607225E09EB00A10DCC /* CRNUnbundlePackage.m */,
+				44D5A608225E09EB00A10DCC /* CRNURL.h */,
+				44D5A60A225E09EB00A10DCC /* CRNURL.m */,
+				44D5A60B225E09EB00A10DCC /* RCTBridge+CRN.h */,
+				44D5A606225E09EB00A10DCC /* RCTBridge+CRN.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44D5A60C225E09EB00A10DCC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A648225E11CE00A10DCC /* Toast */,
+				44D5A60F225E09EB00A10DCC /* CRNDefine.m */,
+				44D5A613225E09EB00A10DCC /* CRNDefine.h */,
+				44D5A614225E09EB00A10DCC /* CRNURLHandler.h */,
+				44D5A610225E09EB00A10DCC /* CRNURLHandler.m */,
+				44D5A60E225E09EB00A10DCC /* CRNUtils.h */,
+				44D5A611225E09EB00A10DCC /* CRNUtils.m */,
+				44D5A612225E09EB00A10DCC /* NSString+URL.h */,
+				44D5A60D225E09EB00A10DCC /* NSString+URL.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		44D5A615225E09EB00A10DCC /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A617225E09EB00A10DCC /* CRNPlugin.h */,
+				44D5A616225E09EB00A10DCC /* CRNPlugin.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		44D5A618225E09EB00A10DCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A619225E09EB00A10DCC /* CRNViewController.h */,
+				44D5A61D225E09EB00A10DCC /* CRNViewController.m */,
+				44D5A61C225E09EB00A10DCC /* CRNBridgeManager.h */,
+				44D5A61A225E09EB00A10DCC /* CRNBridgeManager.m */,
+				44D5A61E225E09EB00A10DCC /* CRNView.h */,
+				44D5A61B225E09EB00A10DCC /* CRNView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44D5A648225E11CE00A10DCC /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				44D5A64D225E11EB00A10DCC /* CTFullScreenMaskView.h */,
+				44D5A64E225E11EB00A10DCC /* CTFullScreenMaskView.m */,
+				44D5A649225E11CE00A10DCC /* CTToastTipView.h */,
+				44D5A64A225E11CE00A10DCC /* CTToastTipView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44D5A62F225E0E0000A10DCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D5A64B225E11CE00A10DCC /* CTToastTipView.h in Headers */,
+				44D5A630225E0E1F00A10DCC /* CRNURL.h in Headers */,
+				44D5A631225E0E1F00A10DCC /* CRNURLHandler.h in Headers */,
+				44D5A632225E0E1F00A10DCC /* CRNUtils.h in Headers */,
+				44D5A633225E0E1F00A10DCC /* CRNViewController.h in Headers */,
+				44D5A64F225E11EB00A10DCC /* CTFullScreenMaskView.h in Headers */,
+				44D5A634225E0E1F00A10DCC /* CRNBridgeManager.h in Headers */,
+				44D5A635225E0E1F00A10DCC /* CRNView.h in Headers */,
+				44D5A636225E0EF200A10DCC /* CRNPlugin.h in Headers */,
+				44D5A637225E0EF200A10DCC /* CRNDefine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		44D5A591225E072000A10DCC /* CRN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D5A59B225E072000A10DCC /* Build configuration list for PBXNativeTarget "CRN" */;
+			buildPhases = (
+				44D5A62F225E0E0000A10DCC /* Headers */,
+				44D5A58E225E072000A10DCC /* Sources */,
+				44D5A58F225E072000A10DCC /* Frameworks */,
+				44D5A590225E072000A10DCC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRN;
+			productName = CRN;
+			productReference = 44D5A592225E072000A10DCC /* libCRN.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D5A58A225E072000A10DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.ctrip;
+				TargetAttributes = {
+					44D5A591225E072000A10DCC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 44D5A58D225E072000A10DCC /* Build configuration list for PBXProject "CRN" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44D5A589225E072000A10DCC;
+			productRefGroup = 44D5A593225E072000A10DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D5A591225E072000A10DCC /* CRN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D5A58E225E072000A10DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D5A626225E09EB00A10DCC /* CRNPlugin.m in Sources */,
+				44D5A64C225E11CE00A10DCC /* CTToastTipView.m in Sources */,
+				44D5A624225E09EB00A10DCC /* CRNURLHandler.m in Sources */,
+				44D5A629225E09EB00A10DCC /* CRNViewController.m in Sources */,
+				44D5A61F225E09EB00A10DCC /* RCTBridge+CRN.m in Sources */,
+				44D5A620225E09EB00A10DCC /* CRNUnbundlePackage.m in Sources */,
+				44D5A625225E09EB00A10DCC /* CRNUtils.m in Sources */,
+				44D5A627225E09EB00A10DCC /* CRNBridgeManager.m in Sources */,
+				44D5A628225E09EB00A10DCC /* CRNView.m in Sources */,
+				44D5A621225E09EB00A10DCC /* CRNURL.m in Sources */,
+				44D5A650225E11EB00A10DCC /* CTFullScreenMaskView.m in Sources */,
+				44D5A622225E09EB00A10DCC /* NSString+URL.m in Sources */,
+				44D5A623225E09EB00A10DCC /* CRNDefine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		44D5A599225E072000A10DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44D5A59A225E072000A10DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D5A59C225E072000A10DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D5A59D225E072000A10DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D5A58D225E072000A10DCC /* Build configuration list for PBXProject "CRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D5A599225E072000A10DCC /* Debug */,
+				44D5A59A225E072000A10DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D5A59B225E072000A10DCC /* Build configuration list for PBXNativeTarget "CRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D5A59C225E072000A10DCC /* Debug */,
+				44D5A59D225E072000A10DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D5A58A225E072000A10DCC /* Project object */;
+}
