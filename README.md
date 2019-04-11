@@ -19,13 +19,13 @@ CRN是Ctrip React Native简称，由携程无线平台研发团队基于React Na
 2. 进入iOS目录，使用`xcode`打开`./ios/CRNDemo.xcodeproj`工程，运行
 3. 进入Android目录，使用`Android Studio`导入`./android`工程，Run
    
-<img src="resources/crndemo.gif" width="30%"/>
+<img src="resources/crndemo.gif" width="50%"/>
 
 ### 三、 CRN性能数据
 
 以Demo工程为例，运行RN官方tester项目。分别在iPhone 7Plus、iPhone 6、Samsung S6 Edge+手机上测试页面的首屏加载时间，对比图如下。
 
-<img src="resources/CRNvsRN.png" width="50%">
+<img src="resources/CRNvsRN.png" width="80%">
 
 可见CRN优化后的页面首屏加载时间与优化前RN官方的方式相比在iOS上减少了50%左右，Android上减少了60%左右，优化效果明显。
 
