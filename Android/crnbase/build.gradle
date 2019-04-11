@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     api 'com.alibaba:fastjson:1.1.34.android'
     if (!rootProject.hasProperty("useReactAndroidSource") || Boolean.parseBoolean(useReactAndroidSource)) {
-        implementation project(':ReactAndroid')
+        api project(':ReactAndroid')
     } else {
         api "ctrip.wireless.android:ReactAndroid:0.59.0-01-SNAPSHOT"
     }
