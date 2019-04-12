@@ -78,4 +78,4 @@ CRN是基于ReactNative定制的，我们对其Runtime、CLI工具代码，都�
 
 ### License
 
-CRN is MIT licensed, as found in the [LICENSE](#LICENCE) file.
+CRN is MIT licensed, as found in the [LICENSE](./LICENSE) file.
