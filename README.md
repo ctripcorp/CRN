@@ -1,7 +1,7 @@
 ## CRN
-CRN是Ctrip React Native简称，由携程无线平台基础框架团队基于React Native框架优化，定制成适合携程业务的跨平台开发框架。
+CRN是Ctrip React Native简称，由携程无线平台研发团队基于React Native框架优化，定制成稳定性和性能更佳、也更适合业务场景的的跨平台开发框架。
 
-本次开源基于ReactNative 0.59.0, react 16.8.3版本, 开源的主要是性能优化部分, 也是规模化使用RN进行业务开发必须要做的优化。
+本次开源基于`ReactNative 0.59.0, react 16.8.3`版本, 开源的主要是性能优化部分, 也是规模化使用RN进行业务开发必须要做的优化。
 
 ### 一、 功能列表
 - 打包支持框架和业务代码拆分
@@ -16,16 +16,16 @@ CRN是Ctrip React Native简称，由携程无线平台基础框架团队基于Re
 开源代码中的iOS/Android Demo工程可以运行起来，参考以下操作步骤。
 
 1. RN运行环境搭建，参考[官方文档](https://facebook.github.io/react-native/docs/getting-started)
-2. 进入iOS目录，使用`xcode`打开`./ios/CRNDemo.xcodeproj`工程，运行
-3. 进入Android目录，使用`Android Studio`导入`./android`工程，Run
+2. 进入iOS目录，使用`xcode`打开`./iOS/CRNDemo/CRNDemo.xcodeproj`工程，运行
+3. 进入Android目录，使用`Android Studio`导入`./Android`工程，Run
    
-<img src="resources/crndemo.gif" width="30%"/>
+<img src="resources/crndemo.gif" width="50%"/>
 
 ### 三、 CRN性能数据
 
 以Demo工程为例，运行RN官方tester项目。分别在iPhone 7Plus、iPhone 6、Samsung S6 Edge+手机上测试页面的首屏加载时间，对比图如下。
 
-<img src="resources/CRNvsRN.png" width="50%">
+<img src="resources/CRNvsRN.png" width="80%">
 
 可见CRN优化后的页面首屏加载时间与优化前RN官方的方式相比在iOS上减少了50%左右，Android上减少了60%左右，优化效果明显。
 
@@ -76,3 +76,6 @@ CRN是基于ReactNative定制的，我们对其Runtime、CLI工具代码，都�
 - 欢迎各位同行提issue和PR
 
 
+### License
+
+CRN is MIT licensed, as found in the [LICENSE](./LICENSE) file.
