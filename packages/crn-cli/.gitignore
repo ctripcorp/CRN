@@ -6,3 +6,4 @@ package-lock.json
 *.log
 build/
 .eslintcache
+package-lock.json.*
