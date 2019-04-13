@@ -51,10 +51,10 @@ function createPackageJSON(projectName = 'CRNDemo') {
 		version: '0.0.1',
 		private: true,
 		scripts: {
-			start: 'crn start',
-			android: 'crn run-android',
-			ios: 'crn run-ios',
-			pack:'crn pack'
+			start: 'crn-cli start',
+			android: 'crn-cli run-android',
+			ios: 'crn-cli run-ios',
+			pack:'crn-cli pack'
 		},
 		packConfig:{
 			entryFile:'index.js',
