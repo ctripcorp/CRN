@@ -55,19 +55,22 @@ function parseCommandParams(args) {
   return parseCommand(paramConfigs, args);
 }
 
-function modifyScript(webPort,projectRoot) {
+function modifyScript(webPort) {
   if (!fs.existsSync(TMP_PATH)) {
     fs.mkdirSync(TMP_PATH);
   }
+  var rnCliConfigPath = path.resolve(process.cwd(),'rn-cli.config.js');
+
   if (/^win/.test(process.platform)) {
     var batPath = path.resolve(TMP_PATH, "launchPackager.bat");
     var winCommand = [
       "@echo off",
       "title React Packager",
+      `cd ..`,
       `node ${path.resolve(
         process.cwd(),
         "node_modules/react-native/local-cli/cli.js"
-      )} start --port ${webPort} ${projectRoot} --config ./rn-cli.config.js`,
+      )} start --port ${webPort} --config ${rnCliConfigPath}`,
       "pause",
       "exit"
     ].join("\n");
@@ -95,7 +98,8 @@ function modifyScript(webPort,projectRoot) {
     var packagerPath = path.resolve(TMP_PATH, "packager.sh");
     var shCommand = [
       "#!/usr/bin/env bash",
-      `node ${cliPath} start --port ${webPort} ${projectRoot} --config ../rn-cli.config.js`
+      `cd ..`,
+      `node ${cliPath} start --port ${webPort} --config ${rnCliConfigPath}`
     ].join("\n");
     fs.writeFileSync(packagerPath, shCommand, "utf8");
 
@@ -176,16 +180,7 @@ function startRNServer() {
 function runRNServer(argv) {
   logOutput.log("当前RN服务正在启动...");
   logOutput.log("当前写入启动服务脚本...");
-  var projectRoot = '';
-  if(fs.existsSync(cliVersion) && semver.gte(require(cliVersion).version,'1.5.0')){
-    if(/^win/.test(process.platform)){
-      projectRoot = '--projectRoot ./ ';
-
-    }else{
-      projectRoot = '--projectRoot ../ ';
-    }
-  }
-  var commandPath = modifyScript(argv.port,projectRoot);
+  var commandPath = modifyScript(argv.port);
   logOutput.log("写入启动服务脚本完成!");
   patch();
   logOutput.log("正在启动RN服务...");
