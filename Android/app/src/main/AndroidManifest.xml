@@ -22,8 +22,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="ctrip.wireless.android.crn.CRNBaseActivity">
-        </activity>
+        <activity android:name="ctrip.wireless.android.crn.CRNBaseActivity" />
+
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 
 
