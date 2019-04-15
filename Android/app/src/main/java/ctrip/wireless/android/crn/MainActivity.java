@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
         String listString = localSP.getString(CRN_DEMO_ADDRESS_LIST, "");
         if (!listString.contains(url)) {
             listString += url;
-            if (TextUtils.isEmpty(listString)) {
+            if (!TextUtils.isEmpty(listString)) {
                 listString += ",";
             }
             localSP.edit().putString(CRN_DEMO_ADDRESS_LIST, listString).apply();
