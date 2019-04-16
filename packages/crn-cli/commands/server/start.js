@@ -66,7 +66,7 @@ function modifyScript(webPort) {
     var winCommand = [
       "@echo off",
       "title React Packager",
-      `cd ..`,
+      `cd ${process.cwd()}`,
       `node ${path.resolve(
         process.cwd(),
         "node_modules/react-native/local-cli/cli.js"
@@ -98,7 +98,7 @@ function modifyScript(webPort) {
     var packagerPath = path.resolve(TMP_PATH, "packager.sh");
     var shCommand = [
       "#!/usr/bin/env bash",
-      `cd ..`,
+      `cd ${process.cwd()}`,
       `node ${cliPath} start --port ${webPort} --config ${rnCliConfigPath}`
     ].join("\n");
     fs.writeFileSync(packagerPath, shCommand, "utf8");
