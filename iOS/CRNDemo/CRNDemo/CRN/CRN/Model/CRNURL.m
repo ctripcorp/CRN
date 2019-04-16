@@ -13,8 +13,7 @@
 #import "NSString+URL.h"
 #import "CRNUtils.h"
 
-#define kDocRNBundleFlag    @"/doc/"  //放到设备documents目录可用
-#define kAbsRNBundleFlag    @"/abs/"  //本地测试可用
+
 #define kUnbundleFileName   @"_crn_unbundle"
 
 @interface CRNURL()
@@ -64,51 +63,33 @@
         if ([urlPath.lowercaseString hasPrefix:@"http"] || [urlPath.lowercaseString hasPrefix:@"file:"]) {
             self.fileAbsolutePath = urlPath;
             self.bundleURL = [NSURL URLWithString:urlPath];
-
         }
         else if ([urlPath hasPrefix:@"/"]) {
-            
             NSRange paramRange = [urlPath rangeOfString:@"?"];
             if (paramRange.location != NSNotFound) {
                 self.fileAbsolutePath = [urlPath substringToIndex:paramRange.location];
-
-                if ([urlPath hasPrefix:kDocRNBundleFlag]) {
-                    self.fileAbsolutePath = [self.fileAbsolutePath  substringFromIndex:kDocRNBundleFlag.length];
-                    self.fileAbsolutePath = [kDocumentDir stringByAppendingPathComponent:self.fileAbsolutePath];
-                }
-                if ([urlPath hasPrefix:kAbsRNBundleFlag]) {
-                    self.fileAbsolutePath = [self.fileAbsolutePath substringFromIndex:kAbsRNBundleFlag.length];
-                }
-                else {
-                    self.fileAbsolutePath = [kWebAppDirPath stringByAppendingPathComponent:self.fileAbsolutePath];
-                }
+                self.fileAbsolutePath = [kWebAppDirPath stringByAppendingPathComponent:self.fileAbsolutePath];
                 
                 NSString *queryString = [urlPath substringFromIndex:paramRange.location];
                 self.bundleURL = [NSURL fileURLWithPath:self.fileAbsolutePath];
                 NSString *urlStr = [self.bundleURL.absoluteString stringByAppendingString:[queryString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
                 self.bundleURL = [NSURL URLWithString:urlStr];
             }
-            
             //read unbundle file path
-            {
-                [self readUnbundleFilePathIfNeed];
-                self.productName = [CRNUtils getPackageNameFromURLString:self.fileAbsolutePath];
-            }
-
+            [self readUnbundleFilePathIfNeed];
+            self.productName = [CRNUtils getPackageNameFromURLString:self.fileAbsolutePath];
         }
         
-        {
-            NSDictionary *query = [self.bundleURL.absoluteString query];
-            for (NSString *key in query.allKeys) {
-                if ([key.lowercaseString isEqualToString:@"crnmodulename"]) {
-                    self.moduleName = query[key];
-                    if ([self.bundleURL isFileURL] && [self isUnbundleRNURL]) {
-                        self.moduleName = [RCTBridge productNameFromFileURL:self.bundleURL];
-                    }
+        NSDictionary *query = [self.bundleURL.absoluteString query];
+        for (NSString *key in query.allKeys) {
+            if ([key.lowercaseString isEqualToString:@"crnmodulename"]) {
+                self.moduleName = query[key];
+                if ([self.bundleURL isFileURL] && [self isUnbundleRNURL]) {
+                    self.moduleName = [RCTBridge productNameFromFileURL:self.bundleURL];
                 }
-                else if ([key.lowercaseString isEqualToString:@"crntitle"]) {
-                    self.title = query[key];
-                }
+            }
+            else if ([key.lowercaseString isEqualToString:@"crntitle"]) {
+                self.title = query[key];
             }
         }
     }

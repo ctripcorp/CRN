@@ -1,17 +1,20 @@
 ### 在现有Android工程中接入CRN
 
-1.将CRNDemo中 crnbase， rnSource目录拷贝至待接入工程顶级目录
+1.将CRNDemo中 crnbase， rnSource, repo 目录拷贝至待接入工程顶级目录
 
 <img src="../resources/android_copy.jpg" width="30%"/>
 
 2.配置相关module
 
-引入base, ReactAndroid module
+引入crnbase, ReactAndroid module
 
 settings.gradle
 ```
 include ':ReactAndroid',':crnbase'
-project(':ReactAndroid').projectDir = new File(rootProject.projectDir, './rnSource/ReactAndroid')
+if (!settings.hasProperty("useReactAndroidSource") || Boolean.parseBoolean(useReactAndroidSource)) {
+    include ':ReactAndroid'
+    project(':ReactAndroid').projectDir = new File(rootProject.projectDir, './rnSource/ReactAndroid')
+}
 ```
 
 将原有项目对ReactNative依赖改为对crn的依赖：
@@ -19,9 +22,28 @@ project(':ReactAndroid').projectDir = new File(rootProject.projectDir, './rnSour
 dependencies {
     ...
     // implementation "com.facebook.react:react-native:+"  // From node_modules
-    implementation project(':base')
+    implementation project(':crnbase')
     ...
 }
+```
+其中ReactAndroid包含RN官方c++代码，需要配置好NDK环境，且第一次编译比较耗时。
+
+如果没有改动RN底层c++代码的需求，可以直接使用ReactAndroid aar包, 在接入工程顶级目录build.gradle中加入本地仓库：
+```
+allprojects {
+    repositories {
+        ...
+        maven {
+            url = "$rootDir/repo"
+        }
+        ...
+    }
+}
+
+```
+并在gradle.properties中关闭源码编译开关：
+```
+useReactAndroidSource=false
 ```
 
 3.将用CRN-CLI打包的产物添加到assets/webapp目录

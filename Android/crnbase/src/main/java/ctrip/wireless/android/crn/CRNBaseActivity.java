@@ -36,6 +36,7 @@ public class CRNBaseActivity extends FragmentActivity implements
     private CRNBaseFragment mCRNBaseFragment;
     private CRNURL mCRNURL;
     private View mLoadingView;
+    private boolean displaying = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,7 @@ public class CRNBaseActivity extends FragmentActivity implements
     @Override
     public void reactViewDisplayed() {
         mLoadingView.setVisibility(View.GONE);
+        displaying = true;
     }
 
     @Override
@@ -87,13 +89,12 @@ public class CRNBaseActivity extends FragmentActivity implements
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (KeyEvent.KEYCODE_BACK == keyCode && mCRNBaseFragment != null) {
+        if (KeyEvent.KEYCODE_BACK == keyCode && mCRNBaseFragment != null && displaying) {
             mCRNBaseFragment.goBack();
             return true;
         } else if (KeyEvent.KEYCODE_MENU == keyCode) {
             return true;
         }
-
         return super.onKeyDown(keyCode, event);
     }
 
