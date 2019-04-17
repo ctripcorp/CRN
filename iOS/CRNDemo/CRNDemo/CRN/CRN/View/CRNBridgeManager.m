@@ -378,8 +378,10 @@ static int g_bridge_GUID = 0;
     if (bridge == NULL) {
         return;
     }
-    
     @synchronized (self) {
+        RCTExecuteOnMainQueue(^{
+            [bridge invalidate];
+        });
         [self.cachedBridgeList removeObject:bridge];
     }
 }

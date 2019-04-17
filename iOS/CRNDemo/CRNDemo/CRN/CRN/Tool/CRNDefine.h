@@ -9,8 +9,13 @@
 
 #import <Foundation/Foundation.h>
 
-
+#ifndef CRN_DEV
+#if DEBUG
 #define CRN_DEV 1
+#else
+#define CRN_DEV 0
+#endif
+#endif
 
 //work目录
 #define kDocumentDir    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
