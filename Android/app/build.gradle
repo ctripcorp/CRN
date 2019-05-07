@@ -10,18 +10,20 @@ android {
         versionCode 1
         versionName "1.0"
         applicationId "ctrip.wireless.android.crn"
-
-        ndk {
-            abiFilters 'armeabi-v7a'
-        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters 'armeabi-v7a'
+            }
         }
         debug {
             jniDebuggable true
+            ndk {
+                abiFilters 'armeabi-v7a', 'x86'
+            }
         }
     }
 }
