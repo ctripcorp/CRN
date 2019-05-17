@@ -53,6 +53,12 @@ useReactAndroidSource=false
 4.启动逻辑中添加代码处理代码并预加载框架代码，可参考CRNDemo中的启动逻辑:
 
 ```
+// 配置context以及版本信息
+ContextHolder.context = this;
+ContextHolder.version = "1.0.0";
+ContextHolder.debug = true;
+ContextHolder.application = this;
+        
 // 安装rn_commom
 PackageManager.installPackageForProduct("rn_common");
 
