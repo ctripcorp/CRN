@@ -7,7 +7,8 @@ module.exports = {
     resolver: {
         blacklistRE: blacklist([
             /^ios\/.*/
-        ])
+        ]),
+        sourceExts: ['js', 'json', 'ts', 'tsx', 'jsx']
     },
 };
 
