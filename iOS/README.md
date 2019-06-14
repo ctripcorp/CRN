@@ -4,9 +4,10 @@
 
 
 2.将CRNDemo/CRN目录下的CRN.xcodeproj子工程添加到现有工程里，添加工程依赖和搜索路径
-
+工程依赖：（注意依赖的顺序：JavaScriptCore.framework和libReact.a在最前，libCRN.a在后）
 <img src="../resources/iOS_linkBinary.png" width="60%" />
-
+搜索路径：
+<img src="../resources/iOS_searchpath.png" width="60%" />
 
 3.将用CRN-CLI打包的产物添加到webapp目录并添加到工程引用。完成之后工程结构包含下图所示部分。 
 
