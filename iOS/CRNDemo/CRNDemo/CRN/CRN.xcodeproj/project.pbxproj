@@ -18,17 +18,7 @@
 		44D5A627225E09EB00A10DCC /* CRNBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61A225E09EB00A10DCC /* CRNBridgeManager.m */; };
 		44D5A628225E09EB00A10DCC /* CRNView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61B225E09EB00A10DCC /* CRNView.m */; };
 		44D5A629225E09EB00A10DCC /* CRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A61D225E09EB00A10DCC /* CRNViewController.m */; };
-		44D5A630225E0E1F00A10DCC /* CRNURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A608225E09EB00A10DCC /* CRNURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A631225E0E1F00A10DCC /* CRNURLHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A614225E09EB00A10DCC /* CRNURLHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A632225E0E1F00A10DCC /* CRNUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A60E225E09EB00A10DCC /* CRNUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A633225E0E1F00A10DCC /* CRNViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A619225E09EB00A10DCC /* CRNViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A634225E0E1F00A10DCC /* CRNBridgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A61C225E09EB00A10DCC /* CRNBridgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A635225E0E1F00A10DCC /* CRNView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A61E225E09EB00A10DCC /* CRNView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A636225E0EF200A10DCC /* CRNPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A617225E09EB00A10DCC /* CRNPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A637225E0EF200A10DCC /* CRNDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A613225E09EB00A10DCC /* CRNDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44D5A64B225E11CE00A10DCC /* CTToastTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A649225E11CE00A10DCC /* CTToastTipView.h */; };
 		44D5A64C225E11CE00A10DCC /* CTToastTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A64A225E11CE00A10DCC /* CTToastTipView.m */; };
-		44D5A64F225E11EB00A10DCC /* CTFullScreenMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D5A64D225E11EB00A10DCC /* CTFullScreenMaskView.h */; };
 		44D5A650225E11EB00A10DCC /* CTFullScreenMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5A64E225E11EB00A10DCC /* CTFullScreenMaskView.m */; };
 /* End PBXBuildFile section */
 
@@ -176,32 +166,11 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		44D5A62F225E0E0000A10DCC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44D5A64B225E11CE00A10DCC /* CTToastTipView.h in Headers */,
-				44D5A630225E0E1F00A10DCC /* CRNURL.h in Headers */,
-				44D5A631225E0E1F00A10DCC /* CRNURLHandler.h in Headers */,
-				44D5A632225E0E1F00A10DCC /* CRNUtils.h in Headers */,
-				44D5A633225E0E1F00A10DCC /* CRNViewController.h in Headers */,
-				44D5A64F225E11EB00A10DCC /* CTFullScreenMaskView.h in Headers */,
-				44D5A634225E0E1F00A10DCC /* CRNBridgeManager.h in Headers */,
-				44D5A635225E0E1F00A10DCC /* CRNView.h in Headers */,
-				44D5A636225E0EF200A10DCC /* CRNPlugin.h in Headers */,
-				44D5A637225E0EF200A10DCC /* CRNDefine.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		44D5A591225E072000A10DCC /* CRN */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44D5A59B225E072000A10DCC /* Build configuration list for PBXNativeTarget "CRN" */;
 			buildPhases = (
-				44D5A62F225E0E0000A10DCC /* Headers */,
 				44D5A58E225E072000A10DCC /* Sources */,
 				44D5A58F225E072000A10DCC /* Frameworks */,
 				44D5A590225E072000A10DCC /* CopyFiles */,
